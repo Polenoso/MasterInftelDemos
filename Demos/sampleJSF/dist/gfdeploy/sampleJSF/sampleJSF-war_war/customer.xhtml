@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Editar cliente</title>
+    </h:head>
+    <h:body>
+        <h:form>           
+        IdCustomer: #{customerBean.clienteSeleccionado.customerId} <br/>
+        Name: <h:inputText value="#{customerBean.clienteSeleccionado.name}" /> <br/>
+        Address: <h:inputText value="#{customerBean.clienteSeleccionado.addressline1}" />
+        <h:inputText value="#{customerBean.clienteSeleccionado.addressline2}" /><br/>
+        City: <h:inputText value="#{customerBean.clienteSeleccionado.city}" /><br/>
+        State: <h:inputText value="#{customerBean.clienteSeleccionado.state}" /><br/>
+        Phone: <h:inputText value="#{customerBean.clienteSeleccionado.phone}" /><br/>
+        Fax: <h:inputText value="#{customerBean.clienteSeleccionado.fax}" /><br/>        
+        Email: <h:inputText value="#{customerBean.clienteSeleccionado.email}" /><br/>                
+        Credit limit: <h:inputText value="#{customerBean.clienteSeleccionado.creditLimit}" /><br/>                        
+        Micromarket zipcode: 
+        <h:selectOneMenu value="#{customerBean.zipCodeSeleccionado}" >
+            <f:selectItems value="#{customerBean.listaZipCodes}" />
+        </h:selectOneMenu> <br/>
+        Discount code:
+        <h:selectOneMenu value="#{customerBean.discountcodeSeleccionado}" >
+            <f:selectItems value="#{customerBean.listaDiscountcodes}" />
+        </h:selectOneMenu> <br/>
+        
+        <h:commandButton action="#{customerBean.doGuardar}" value="Editar" />        
+        </h:form>
+    </h:body>
+</html>
+

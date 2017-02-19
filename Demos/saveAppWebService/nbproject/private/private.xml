@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/Users/aitorpagan/Desktop/Master%20Inftel/MongoDB/saveAppWebService/web/index.html</file>
+            <file>file:/Users/aitorpagan/Desktop/Master%20Inftel/MongoDB/saveAppWebService/src/java/restful/GastosFacadeREST.java</file>
+            <file>file:/Users/aitorpagan/Desktop/Master%20Inftel/MongoDB/saveAppWebService/src/java/restful/IngresosFacadeREST.java</file>
+            <file>file:/Users/aitorpagan/Desktop/Master%20Inftel/MongoDB/saveAppWebService/src/java/restful/UsuarioFacadeREST.java</file>
+            <file>file:/Users/aitorpagan/Desktop/Master%20Inftel/MongoDB/saveAppWebService/src/java/model/Usuario.java</file>
+            <file>file:/Users/aitorpagan/Desktop/Master%20Inftel/MongoDB/saveAppWebService/src/java/model/Ingresos.java</file>
+            <file>file:/Users/aitorpagan/Desktop/Master%20Inftel/MongoDB/saveAppWebService/src/java/restful/AbstractFacade.java</file>
+            <file>file:/Users/aitorpagan/Desktop/Master%20Inftel/MongoDB/saveAppWebService/src/java/model/Gastos.java</file>
+        </group>
+    </open-files>
+</project-private>

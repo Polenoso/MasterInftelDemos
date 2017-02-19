@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Lista de Customers</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <h:dataTable value="#{customerBean.listaClientes}" var="cliente">
+                <h:column>
+                    <f:facet name="header">
+                        CUSTOMER_ID
+                    </f:facet>
+                    #{cliente.customerId}
+                </h:column>
+                <h:column>
+                    <f:facet name="header">
+                        NAME
+                    </f:facet>
+                    #{cliente.name}
+                </h:column>          
+                <h:column>
+                    <h:commandButton action="#{customerBean.doEdit(cliente)}" value="Editar" />
+                </h:column>
+                <h:column>
+                    <h:commandButton action="#{customerBean.doDelete(cliente)}" value="Borrar" />
+                </h:column>
+                
+            </h:dataTable>
+                
+        </h:form>
+        <h:link outcome="customer" value="Nuevo cliente" />
+    </h:body>
+</html>
+

@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+<h:head><title>JSF 2.0: Controlling Scopes</title>
+<link href="./css/styles.css" 
+      rel="stylesheet" type="text/css"/> 
+</h:head>
+<h:body>
+<div align="center">
+<table border="5">
+  <tr><th class="title">JSF 2.0: Controlling Scopes</th></tr>
+</table>
+<p/>
+<fieldset>
+<legend>Bank Customer Lookup (Session Scope)</legend>
+<h:form>
+  Customer ID: 
+  <h:inputText value="#{bankingBean2.customerId}"/><br/>
+  Password: 
+  <h:inputSecret value="#{bankingBean2.password}"/><br/>
+  <h:commandButton value="Show Current Balance" 
+                   action="#{bankingBean2.showBalance}"/>
+</h:form>
+</fieldset>
+</div></h:body></html>
